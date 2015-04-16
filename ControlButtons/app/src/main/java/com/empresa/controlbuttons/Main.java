@@ -1,17 +1,27 @@
 package com.empresa.controlbuttons;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
-public class Main extends ActionBarActivity {
+public class Main extends ActionBarActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button b = (Button) findViewById(R.id.button);
+        b.setOnClickListener(this);
+
+        ImageButton gato = (ImageButton) findViewById(R.id.imageButton);
+        gato.setOnClickListener(this);
     }
 
 
@@ -35,5 +45,15 @@ public class Main extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.button) {
+
+        } else if (id == R.id.imageButton) {
+            startActivity(new Intent(this, Segunda.class));
+        }
     }
 }
