@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Main">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpain"
+        android:src="@drawable/spain"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFrance"
+        android:src="@drawable/france"
+        android:layout_below="@+id/btnSpain"
+        android:layout_alignStart="@+id/btnSpain" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGermany"
+        android:src="@drawable/germany"
+        android:layout_below="@+id/btnJapan"
+        android:layout_alignStart="@+id/btnJapan" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnJapan"
+        android:src="@drawable/japan"
+        android:layout_below="@+id/btnUsa"
+        android:layout_alignStart="@+id/btnUsa" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUsa"
+        android:src="@drawable/usa"
+        android:layout_below="@+id/btnFrance"
+        android:layout_alignStart="@+id/btnFrance" />
+
+</RelativeLayout>
