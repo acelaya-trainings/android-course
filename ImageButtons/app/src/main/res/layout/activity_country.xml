@@ -10,10 +10,10 @@
         android:id="@+id/lblName" />
 
     <EditText
-        android:layout_width="381dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtName"
-        android:layout_gravity="right" />
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"

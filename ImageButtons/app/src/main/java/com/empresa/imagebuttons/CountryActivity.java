@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.empresa.model.Country;
 
@@ -22,7 +21,7 @@ public class CountryActivity extends ActionBarActivity {
         EditText txtPopulation = (EditText) findViewById(R.id.txtPopulation);
         CheckBox chkUe = (CheckBox) findViewById(R.id.chkUe);
 
-        txtName.setText(c.getName());
+        txtName.setText(c.getName().toString());
         txtPopulation.setText(String.valueOf(c.getPopulation()));
         chkUe.setChecked(c.getBelongsUe());
     }
