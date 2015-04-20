@@ -39,13 +39,13 @@ public class Main extends ListActivity {
             LayoutInflater inflater = (LayoutInflater)
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View row = inflater.inflate(R.layout.list_items, parent, false);
-            String[] items = getResources().getStringArray(R.array.animals);
             ImageView image = (ImageView) row.findViewById(R.id.imageView);
             TextView text = (TextView) row.findViewById(R.id.textView);
             Button button = (Button) row.findViewById(R.id.button);
 
-            text.setText(items[position]);
-            final int imageResource = "Cat".equals(items[position]) ? R.drawable.gatito : R.drawable.perrito;
+            String item = getItem(position);
+            text.setText(item);
+            final int imageResource = "Cat".equals(item) ? R.drawable.gatito : R.drawable.perrito;
             image.setImageResource(imageResource);
 
             button.setOnClickListener(new View.OnClickListener() {
