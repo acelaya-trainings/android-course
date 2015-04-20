@@ -2,11 +2,13 @@ package com.empresa.listas;
 
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,7 +24,7 @@ public class Main extends ListActivity {
                 this,
                 android.R.layout.simple_list_item_1,
                 R.id.textView,
-                getResources().getStringArray(R.array.countries)
+                getResources().getStringArray(R.array.animals)
         ));
     }
 
@@ -37,22 +39,23 @@ public class Main extends ListActivity {
             LayoutInflater inflater = (LayoutInflater)
                     getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View row = inflater.inflate(R.layout.list_items, parent, false);
-            String[] items = getResources().getStringArray(R.array.countries);
+            String[] items = getResources().getStringArray(R.array.animals);
             ImageView image = (ImageView) row.findViewById(R.id.imageView);
             TextView text = (TextView) row.findViewById(R.id.textView);
+            Button button = (Button) row.findViewById(R.id.button);
 
             text.setText(items[position]);
-            if ("EEUU".equals(items[position])) {
-                image.setImageResource(R.drawable.usa);
-            } else if ("Spain".equals(items[position])) {
-                image.setImageResource(R.drawable.spain);
-            } else if ("France".equals(items[position])) {
-                image.setImageResource(R.drawable.france);
-            } else if ("Japan".equals(items[position])) {
-                image.setImageResource(R.drawable.japan);
-            } else if ("Germany".equals(items[position])) {
-                image.setImageResource(R.drawable.germany);
-            }
+            final int imageResource = "Cat".equals(items[position]) ? R.drawable.gatito : R.drawable.perrito;
+            image.setImageResource(imageResource);
+
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(Main.this, ImageActivity.class);
+                    i.putExtra("imageResource", imageResource);
+                    startActivity(i);
+                }
+            });
 
             return row;
         }
