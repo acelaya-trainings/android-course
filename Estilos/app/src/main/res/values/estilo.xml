@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="codigo" parent="@android:style/TextAppearance">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#FF4668FF</item>
+    </style>
+    <style name="codigo.verde">
+        <item name="android:textColor">#FF18FF8D</item>
+    </style>
+</resources>
