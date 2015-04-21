@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<animation-list android:oneshot="true" xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/animacion_01" android:duration="30"/>
     <item android:drawable="@drawable/animacion_02" android:duration="30"/>
     <item android:drawable="@drawable/animacion_03" android:duration="30"/>
