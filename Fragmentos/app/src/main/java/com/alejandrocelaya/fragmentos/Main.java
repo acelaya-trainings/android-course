@@ -1,9 +1,8 @@
 package com.alejandrocelaya.fragmentos;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 
 public class Main extends ActionBarActivity {
@@ -13,7 +12,8 @@ public class Main extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        Fragment f1 = getSupportFragmentManager().findFragmentById(R.id.fragment);
+        Fragment f2 = getSupportFragmentManager().findFragmentById(R.id.fragment2);
     }
 
 }
