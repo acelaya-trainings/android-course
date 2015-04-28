@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -37,6 +38,11 @@ public class Main extends ActionBarActivity {
                 PendingIntent pi = PendingIntent.getActivity(Main.this, 0, i, 0);
 
                 notification.setLatestEventInfo(Main.this, title, detalles, pi);
+                notification.sound = Uri.parse(String.format(
+                        "android.resource://%s/%s",
+                        getPackageName(),
+                        R.raw.sonido
+                ));
                 nm.notify(0, notification);
             }
         });
