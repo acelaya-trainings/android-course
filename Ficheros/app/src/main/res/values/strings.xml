@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ficheros</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="escribir">Escribir</string>
+    <string name="leer">Leer</string>
+    <string name="leerRaw">Leer RAW</string>
+</resources>
