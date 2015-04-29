@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Main">
+
+    <item android:id="@+id/saludar" android:title="@string/saludar"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/despedir" android:title="@string/despedir"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
