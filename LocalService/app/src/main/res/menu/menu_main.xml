@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Main">
+    <item android:id="@+id/arrancar" android:title="@string/arrancar"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/enlazar" android:title="@string/enlazar"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/saludar" android:title="@string/saludar"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/desenlazar" android:title="@string/desenlazar"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/parar" android:title="@string/parar"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LocalService</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="arrancar">Arrancar</string>
+    <string name="enlazar">Enlazar</string>
+    <string name="saludar">Saludar</string>
+    <string name="desenlazar">Desenlazar</string>
+    <string name="parar">Parar</string>
+</resources>
