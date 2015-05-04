@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.calculadora"
+        applicationId "com.alejandrocelaya.activityresult"
         minSdkVersion 19
         targetSdkVersion 21
         versionCode 1
