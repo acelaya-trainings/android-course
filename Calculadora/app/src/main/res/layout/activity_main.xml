@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/numero1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/numero2"
+        android:layout_below="@+id/numero1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/numero1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        android:id="@+id/sumar"
+        android:layout_below="@+id/numero2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/numero2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        android:id="@+id/restar"
+        android:layout_below="@+id/sumar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/sumar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:id="@+id/multiplicar"
+        android:layout_below="@+id/restar"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/restar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/resultado"
+        android:layout_below="@+id/multiplicar"
+        android:layout_alignEnd="@+id/multiplicar"
+        android:layout_toEndOf="@+id/label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Resultado:"
+        android:id="@+id/label"
+        android:layout_alignTop="@+id/resultado"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
