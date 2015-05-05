@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internacionalización</string>
+    <string name="hello_world">¡Hola mundo!</string>
+    <string name="action_settings">Preferencias</string>
+</resources>
