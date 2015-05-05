@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignStart="@+id/precio" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/precio"
+        android:layout_below="@+id/nombre"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cantidad"
+        android:layout_below="@+id/precio"
+        android:layout_alignEnd="@+id/precio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre:"
+        android:id="@+id/textView"
+        android:layout_above="@+id/precio"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Precio:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/nombre"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/cantidad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cantidad:"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/cantidad"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar Producto"
+        android:id="@+id/insertar"
+        android:layout_below="@+id/cantidad"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/cantidad"
+        android:onClick="addProduct"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Productos"
+        android:id="@+id/listar"
+        android:layout_below="@+id/insertar"
+        android:layout_alignEnd="@+id/insertar"
+        android:layout_alignParentStart="true"
+        android:onClick="showAllProducts"/>
+
+</RelativeLayout>
